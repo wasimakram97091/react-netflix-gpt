@@ -2,7 +2,7 @@ import React from "react";
 
 function VideoTitle({ title, overview }) {
   return (
-    <div className=" w-screen aspect-video pt-[25%] px-12 absolute bg-gradient-to-r from-black text-white ">
+    <div className=" w-full aspect-video pt-[25%] px-12 absolute bg-gradient-to-r from-black text-white ">
       <h1 className="text-3xl font-bold">{title}</h1>
       <p className="my-4 w-1/2 text-lg">{overview}</p>
       <div className="flex gap-2">

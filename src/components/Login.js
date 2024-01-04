@@ -63,15 +63,17 @@ const Login = () => {
 
   return (
     <div className=" h-screen relative">
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+      {/* <div className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-20"></div> */}
+
       <Header />
+
       <div className="absolute ">
         <img
           src="https://assets.nflxext.com/ffe/siteui/vlv3/563192ea-ac0e-4906-a865-ba9899ffafad/6b2842d1-2339-4f08-84f6-148e9fcbe01b/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg"
           alt="login-bg"
         />
       </div>
-      <form onSubmit={(e) => e.preventDefault()} className="text-white w-3/12 p-10 bg-black my-36 mx-auto absolute right-0 left-0 bg-opacity-80 rounded-lg">
+      <form onSubmit={(e) => e.preventDefault()} className="text-white w-3/12 p-10 bg-black my-36 mx-auto absolute right-0 left-0 bg-opacity-80 rounded-lg z-40">
         <h1 className="text-3xl font-bold py-3">{isSignInForm ? "Sign In" : "Sign Up"}</h1>
         {!isSignInForm && <input ref={name} type="text" placeholder="Full Name" className="p-4 my-4 w-full rounded-md bg-gray-700 outline-none" />}
         <input ref={email} type="text" placeholder="Email Address" className="p-4 my-4 w-full rounded-md bg-gray-700 outline-none" />
